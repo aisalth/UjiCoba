@@ -30,4 +30,17 @@ echo "<a href = 'logout.php'>Logout</a>";
 //     echo "<a href=login.php>Login</a>";
 // }
 
+if(!isset($_SESSION['username'])){
+    header("location: login.php");
+}
+
+echo "Selamat Datang, ". $_SESSION['username']."!";
+echo "<a href = 'logout.php'>Logout</a>";
+if(!isset($_SESSION['username'])){
+    header("location: login.php");
+}
+
+echo "Selamat Datang, ". $_SESSION['username']."!";
+echo "<a href = 'logout.php'>Logout</a>";
+
 ?>
